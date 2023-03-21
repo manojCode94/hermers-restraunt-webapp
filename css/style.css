@@ -1,0 +1,148 @@
+/*====== root items =======*/
+:root {
+    --main-color: #1E9C5E;
+}
+button:focus{
+	box-shadow: none!important;
+}
+button:focus {
+    box-shadow: none !important;
+}
+a {
+    text-decoration:none!important;
+}
+a.nav-link{
+    color:white !important;
+    margin:0px 15px;
+    font-size: 20px;
+    transition: .4s;
+}
+a.nav-link:hover {
+    color: tomato!important;
+}
+a.nav-brand{
+    margin: 0 15px;
+}
+.navbar.navbar-expand-lg.navbar-dark.bg-dark{
+    position: fixed;
+    width:100%;
+    z-index: 12;
+}
+h1.home{
+color:black!important;
+font-size:60px;
+position: 0px 40px;
+font-weight: 700;
+}
+h1.home span {
+color:var(--main-color);
+font-size: 65px;
+font-weight: 700;
+}
+
+button.inline-flex.text-white.bg-indigo-500.border-0.py-2.px-6.focus\:outline-none.hover\:bg-indigo-600.rounded.text-lg{
+   background-color: var(--main-color)!important;
+   color:white;
+   transition: .4s; 
+}
+.inline-flex.text-white.bg-indigo-500.border-0.py-2.px-6.focus\:outline-none.hover\:bg-indigo-600.rounded.text-lg:hover{
+background: black!important;
+}
+
+button.ml-4.inline-flex.text-gray-700.bg-gray-100.border-0.py-2.px-6.focus\:outline-none.hover\:bg-gray-200.rounded.text-lg{
+    background-color: var(--main-color)!important;
+    color:white;
+    transition: .4s; 
+}
+button.ml-4.inline-flex.text-gray-700.bg-gray-100.border-0.py-2.px-6.focus\:outline-none.hover\:bg-gray-200.rounded.text-lg:hover{
+    background:black!important;
+}
+button.text-white.bg-indigo-500.border-0.py-2.px-6.focus\:outline-none.hover\:bg-indigo-600.rounded.text-lg{
+    background-color: var(--main-color)!important;
+}
+.h-1.w-20.bg-indigo-500.rounded{
+    background: var(--main-color)!important;
+}
+.w-10.h-10.text-white.p-2.bg-indigo-500.rounded-full {
+    background-color: var(--main-color);
+}
+span.ml-3.text-xl{
+text-decoration: none!important;
+}
+
+/*======= color switcher =============*/
+.color-switcher {
+position: fixed;
+top:80px;
+right:-200px;
+background: #fff;
+color: var(--main-color);
+width:200px;
+padding:10px;
+z-index: 1000;
+}
+.color-switcher.active {
+    right:0;
+}
+.color-switcher h3 {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-bottom:10px;
+    border-bottom: 1px solid #3333;
+    padding: 5px 0;
+    text-align: center;
+
+}
+.color-switcher-btn {
+    position: absolute;
+    top:0;
+    left:-60px;
+    color:#fff;
+    background: tomato;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.color-switcher-btn i{
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.theme-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+span.theme-buttons {
+    display: block;
+    border-radius: 50%;
+    margin:5px;
+    cursor: pointer;
+    height: 50px;
+    width:50px;
+}
+
+/*======= bootom to top button ========*/
+a.upper-Btn {
+    height: 40px;
+    width:40px;
+    border-radius:50%;
+    background:var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility:hidden;
+    position:fixed;
+    bottom:20px;
+    z-index: 999;
+    right:10px;
+}
+a.upper-Btn i{
+    color:white;
+}
